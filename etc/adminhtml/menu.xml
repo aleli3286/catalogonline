@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Botta_CigarCatalog::cigar_catalog_subscription" title="Cigar Catalog Subscriptions" translate="title" module="Botta_CigarCatalog" parent="Magento_Backend::marketing_user_content" sortOrder="20" action="cigarcatalog/subscription/index" resource="Magento_Backend::admin"/>
+    </menu>
+</config>

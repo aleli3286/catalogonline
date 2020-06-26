@@ -1,0 +1,411 @@
+<?php /** @var \Botta\CigarCatalog\Block\Index $block */ ?>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+
+<style type="text/css">
+    #section-band {
+        background-position: center;
+        height: 192px;
+        margin-bottom: 20px;
+    }
+    #section-band > div {
+        position: relative;
+        top: 22%;
+    }
+    #section-band p {
+        color: #ffffff;
+        font-size: 4em;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    @media (max-width: 767px) {
+        #section-band {
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        #section-band > div {
+            position: relative;
+            top: 12%;
+        }
+        #section-band p {
+            font-size: 2em;
+        }
+        #section-band button.action.primary {
+            font-size: 0.8em;
+            height: auto;
+            padding: 3px 10px !important;
+        }
+    }
+</style>
+<div class="category-features row" style="padding-bottom: 15px;">
+
+    <div class="image_header_big category-image col-xs-12"><img src="<?php echo $block->getViewFileUrl('Botta_CigarCatalog::images/hero.jpg') ?>" alt="Catalog" title="Catalog" class="image image_category" style="">
+        <h1>MIKE'S CATALOG</h1>
+    </div>
+
+</div>
+
+<style type="text/css">
+    #section-textus {
+        margin-bottom: 40px;
+    }
+    #section-textus p.title {
+        font-size: 2.9em;
+        font-weight: lighter;
+        text-align: center;
+    }
+    #section-textus p.text {
+        font-size: 1.2em;
+        font-weight: lighter;
+        text-align: center;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .sign-bt
+    {
+        margin-bottom: 5px;
+    }
+    .image_header_big h1
+    {
+        top: 65px !important;
+        font-size: 45px;
+        font-weight: 600 !important;
+        margin-left: 22%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .image_header_big h1 {
+            top: 7px !important;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            margin-left: 20%;
+        }
+
+        #section-textus {
+            margin-bottom: 20px;
+        }
+
+        #section-textus p.title {
+            font-size: 1.5em;
+        }
+
+        #section-textus p.text {
+            font-size: 1em;
+            padding-left: unset;
+            padding-right: unset;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        .image_header_big h1 {
+             top: 23% !important;
+        }
+        #section-view-catalog-online .textus a {
+            padding: 20px 25px !important;
+        }
+
+    }
+</style>
+<div class="container" id="section-textus">
+    <div class="text-center sign-bt">
+        <button class="action primary" type="button" onclick="{var windowHeight=jQuery(window).height();jQuery('html,body').animate({scrollTop:jQuery('form#subscribe-catalog').offset().top-windowHeight/2});}">
+            <?php echo __('SIGN UP FOR FREE TODAY!') ?>
+        </button>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-md-offset-3">
+            <p class="title"><?php echo __('Request your FREE copy of Mike\'s Cigars catalog today!') ?></p>
+            <p class="text"><?php echo __('View Mike\'s Cigars catalog to see all cigars and cigar accessories as well as cigar deals, specials, and sales.') ?></p>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    #section-view-catalog-online {
+        background-color: #f8f8fa;
+        background-image: url(<?php echo $block->getCatalogImageUrl() ?>);
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 350px;
+        margin-bottom: 40px;
+    }
+    #section-view-catalog-online .textus {
+        position: relative;
+        left: 10%;
+        top: 20%;
+        width: 25%;
+    }
+    #section-view-catalog-online .textus p {
+        font-size: 2.1em;
+    }
+    #section-view-catalog-online .textus a {
+        background-color: #8b1313;
+        border-radius: 45px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: lighter;
+        padding: 30px 35px;
+        box-shadow: -2px 20px 1px 1px rgba(0, 0, 0, 0.02);
+    }
+
+    @media screen and (max-width: 767px) {
+        #section-view-catalog-online {
+            background-position: bottom;
+            -webkit-background-size: auto 120px;
+            background-size: auto 120px;
+            height: 150px;
+        }
+        #section-view-catalog-online .textus {
+            left: 2%;
+            top: 10%;
+            width: 80%;
+        }
+        #section-view-catalog-online .textus p {
+            font-size: unset;
+        }
+        #section-view-catalog-online .textus a {
+            border-radius: 30px;
+            font-size: 0.8em;
+            padding: 10px 13px;
+            box-shadow: -2px 10px 1px 1px rgba(0, 0, 0, 0.02);
+        }
+        .view_online
+        {
+            padding-left: 45px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 867px) {
+        #section-view-catalog-online .textus {
+            left: 8%;
+            top: 10%;
+        }
+    }
+</style>
+<div class="container" id="section-view-catalog-online">
+    <div class="textus">
+        <div class="row">
+            <div class="col-sm-9 col-xs-12">
+                <p><?php echo __('View our Catalog Online') ?></p>
+            </div>
+            <div class="view_online col-sm-3 col-xs-12">
+                <a href="<?php echo $block->getUrl('catalogmike/') ?>" target="_blank"><span class="fa fa-arrow-right"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    #section-download {
+        margin-bottom: 40px;
+    }
+    #section-download .box-left,
+    #section-download .box-right {
+        background-color: #f8f8fa;
+        min-height: 272px;
+        padding: 10px;
+    }
+    #section-download .box-left {
+        margin: 0 5px 0 -15px;
+    }
+    #section-download .box-right {
+        margin: 0 -15px 0 5px;
+    }
+    #section-download .minibox {
+        font-size: 1.3em;
+        padding: 30px 20px;
+    }
+    #section-download .minibox a {
+        color: #8b1313;
+        font-weight: bold;
+    }
+</style>
+<div class="container" id="section-download">
+    <div class="row hidden-xs">
+        <div class="col-xs-12 col-sm-6">
+            <div class="box-left">
+                <div class="row">
+                    <div class="col-xs-4 minibox">
+                        <img src="<?php echo $block->getViewFileUrl('Botta_CigarCatalog::images/paper.png') ?>" alt="" class="img img-responsive">
+                    </div>
+                    <div class="col-xs-8 minibox">
+                        <h3><?php echo __('Printable Order Form') ?></h3>
+                        <p><a href="/pub/media/order-form.pdf" target="_blank">Download</a> our printable order form or <a href="<?php echo $block->getUrl('cigars/brands')?>">Shop Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="box-right">
+                <div class="row">
+                    <div class="col-xs-4 minibox text-center">
+                        <span class="fa fa-file-pdf-o" style="color: #8b1313; font-size: 6em; margin-top: 35px;"></span>
+                    </div>
+                    <div class="col-xs-8 minibox">
+                        <h3>Mike's Cigars catalog PDF Version</h3>
+                        <p><a href="/pub/media/catalog.pdf" target="_blank">Download</a></p>
+                        <p>
+                            <small>You can also right click on link and choose &quot;Save Target As&quot; or &quot;Save Link to&quot;.</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="visible-xs" style="margin-bottom: 10px; background-color: #f8f8fa; padding: 20px;">
+        <div class="row">
+            <div class="col-xs-4">
+                <img src="<?php echo $block->getViewFileUrl('Botta_CigarCatalog::images/paper.png') ?>" alt="" class="img img-responsive">
+            </div>
+            <div class="col-xs-8">
+                <p style="font-size: 1.05em;"><?php echo __('Printable Order Form') ?></p>
+                <p style="font-size: 0.9em;"><a href="/pub/media/order-form.pdf" style="color: #8b1313; font-weight: bold;">Download</a> or printable order form or <a href="<?php echo $block->getUrl('cigars/brands')?>" style="color: #8b1313; font-weight: bold;">Shop Now</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="visible-xs" style="margin-bottom: 10px; background-color: #f8f8fa; padding: 20px;">
+        <div class="row">
+            <div class="col-xs-4">
+                <span class="fa fa-file-pdf-o fa-5x" style="color: #8b1313;"></span>
+            </div>
+            <div class="col-xs-8">
+                <p style="font-size: 1.05em;">Mike's Cigars catalog PDF Version</p>
+                <p><a ref="/pub/media/catalog.pdf" style="color: #8b1313; font-weight: bold;">Download</a></p>
+                <p>
+                    <small>You can also right click on link and choose &quot;Save Target As&quot; or &quot;Save Link to&quot;.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    #section-form input[type="text"],
+    #section-form input[type="email"],
+    #section-form textarea,
+    #section-form select {
+        border-radius: 0;
+        font-size: 14px;
+    }
+
+    #section-form input[type="text"],
+    #section-form input[type="email"],
+    #section-form textarea {
+        border-width: 0 0 1px 0;
+    }
+    #section-form label[required]:after {
+        color: #8b1313;
+        content: '*';
+        margin-left: 8px;
+    }
+</style>
+<div class="container" id="section-form">
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2">
+            <p style="font-size: 1.2em; font-weight: lighter !important; text-align: center;">
+                <?php echo __('Fill out the form to receive a free cigar catalog for discount cigar brands, a variety of cigar lighters and cutters, high-quality humidors and other cigar accessories.') ?>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-md-offset-3">
+            <p class="text-center" style="font-size: 2.9em; font-weight: lighter !important;"><?php /* @escapeNotVerified */ echo __('Free Cigar Catalog Sign Up') ?></p>
+            <p class="text-center" style="font-size: 1.2em; font-weight: lighter !important;"><?php /* @escapeNotVerified */ echo __('Please fill the form bellow with your information.') ?></p>
+            <br>
+            <form action="<?php echo $block->getFormAction() ?>" method="post" id="subscribe-catalog" data-mage-init='{"validation": {}}'>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="subscribe_firstname" required><?php /* @escapeNotVerified */ echo __('First Name') ?></label>
+                            <input type="text" maxlength="20" id="subscribe_firstname" name="subscribe[firstname]" required="required" class="required" value="<?php echo $block->getFormValue('firstname') ?>">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="subscribe_lastname" required><?php /* @escapeNotVerified */ echo __('Last Name') ?></label>
+                            <input type="text" maxlength="30" id="subscribe_lastname" name="subscribe[lastname]" required="required" class="required" value="<?php echo $block->getFormValue('lastname') ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subscribe_email"><?php /* @escapeNotVerified */ echo __('Email') ?></label>
+                    <input type="email" id="subscribe_email" name="subscribe[email]" value="<?php echo $block->getFormValue('email') ?>">
+                </div>
+                <div class="form-group">
+                    <label for="subscribe_address" required><?php /* @escapeNotVerified */ echo __('Address') ?></label>
+                    <input type="text" name="subscribe[address]" id="subscribe_address" required="required" class="required" value="<?php echo $block->getFormValue('address') ?>">
+                </div>
+                <div class="form-group">
+                    <label for="subscribe_city" required><?php echo __('City') ?></label>
+                    <input type="text" name="subscribe[city]" id="subscribe_city" required="required" class="required" value="<?php echo $block->getFormValue('city') ?>">
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="subscribe_state" required><?php echo __('State') ?></label>
+                            <?php $states = $block->getStates(); ?>
+                            <select name="subscribe[state]" id="subscribe_state" required="required" class="required">
+                                <option value="" selected><?php echo __('Please select a state') ?></option>
+                                <?php foreach ($states as $state) : ?>
+                                    <?php $st = $state->getDefaultName(); ?>
+                                    <option value="<?php echo $st ?>"<?php echo $block->getFormValue('state') == (string)$st ? ' selected' : '' ?>><?php echo $st ?></option>
+                                <?php endforeach ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="subscribe_postcode" required><?php echo __('ZIP') ?></label>
+                            <input type="text" name="subscribe[postcode]" id="subscribe_postcode" required="required" class="required" value="<?php echo $block->getFormValue('postcode') ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subscribe_comments"><?php echo __('Comments') ?></label>
+                    <textarea name="subscribe[comments]" id="subscribe_comments"><?php echo $block->getFormValue('comments') ?></textarea>
+                </div>
+                <?php echo $block->getChildHtml('form.additional.info') ?>
+                <div class="text-center">
+                    <button type="submit" class="action primary">
+                        <?php echo __('SEND REQUEST') ?>
+                    </button>
+                </div>
+            </form>
+            <br>
+            <p class="text-center" style="font-size: 1.2em; font-weight: lighter !important;">
+                <?php echo __('***Our catalog is for adults age 21 and over only.') ?>
+            </p>
+        </div>
+    </div>
+</div>
+</html>
+<script>
+    require(['jquery'],function($){
+        $('.required').change(function () {
+            var input_valid = $( this ).find( "input" );
+            if(input_valid.is(":visible") == true && input_valid.val().length>0)
+            {
+                var id = input_valid.attr('id');
+
+                $("#" + id).removeClass('mage-error');
+                $("#" + id + '-error').hide();
+            }
+            else {
+
+                var id = $(this).attr('id');
+
+                if (id) {
+                    var select = $("#" + id);
+                    if (select.val()) {
+                        $("#" + id).removeClass('mage-error');
+                        $("#" + id + '-error').hide();
+                    }
+                }
+            }
+        });
+    });
+</script>

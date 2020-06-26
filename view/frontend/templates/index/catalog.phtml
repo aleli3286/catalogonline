@@ -1,0 +1,24 @@
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<script type="text/javascript">
+    require([
+        'jquery'
+    ], function($) {
+        'use strict';
+
+        $(document).ready(function() {
+            $(window.top).on('resize', function() {
+                $('iframe').outerHeight($(window.top).height());
+            }).trigger('resize');
+        });
+    });
+</script>
+
+<div align="center">
+    <iframe align="center" src="/pub/catalog/index.html" width="100%" height="768" border="0"/>
+</div>
